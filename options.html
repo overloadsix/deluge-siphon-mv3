@@ -1,0 +1,8 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><title>Deluge Siphon Settings</title><style>body{font:16px system-ui;max-width:620px;margin:40px auto;padding:0 20px}label{display:block;margin-top:18px}input[type=url],input[type=password]{box-sizing:border-box;width:100%;padding:10px;margin-top:6px}button{margin:18px 8px 0 0;padding:10px 18px}#status{white-space:pre-wrap}</style></head><body>
+<h1>Deluge Siphon</h1><p>Connect to the Deluge WebUI. These settings are saved locally in this browser.</p>
+<label>Deluge WebUI URL<input type="url" id="url" placeholder="http://your-deluge-host:8112" required></label>
+<label>WebUI password<input type="password" id="password" autocomplete="off"></label>
+<label><input type="checkbox" id="autoIntercept" checked> Send clicked magnet links directly to Deluge</label>
+<button id="save">Save</button><button id="test">Test connection</button><p id="status" role="status"></p>
+<script src="options.js"></script></body></html>
